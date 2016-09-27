@@ -29,21 +29,32 @@
         <h3>
 <a id="plymouth" class="anchor" href="#plymouth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plymouth Ship</h3>
         <script>
+          var a = document.createElement('url');
+          url.appendChild(linkText);
           x = Math.floor((Math.random() * 3) + 1);
           if (x == 1)
           {
             document.write("Your ship has successfully landed and is setting up camp!")
-            document.write("\nClick the link below to continue your journey.")
+            document.write("<br>");
+            document.write("Click the link below to continue your journey.")
+            url.href = "http://example.com";
+            document.body.appendChild(url);
           }
           if (x == 2)
           {
             document.write("Your ship has had a minor crash and you loose 5% of your people.")
-            document.write("\nClick the link below to continue your journey.")
+            document.write("<br>");
+            document.write("Click the link below to continue your journey.")
+            url.href = "http://example.com";
+            document.body.appendChild(url);
           }
           if (x == 3)
           {
             document.write("Your ship has had a major crash while trying to land, causing you to lose 50% of people and 10% of supplies.")
-            document.write("\nClick the link below to continue your journey.")
+            document.write("<br>");
+            document.write("Click the link below to continue your journey.")
+            url.href = "http://example.com";
+            document.body.appendChild(url);
           }
         </script>
       </section>

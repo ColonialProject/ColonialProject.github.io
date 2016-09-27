@@ -28,11 +28,22 @@
       <section id="main_content" class="inner">
         <h3>
 <a id="plymouth" class="anchor" href="#plymouth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plymouth Ship</h3>
-
-<p>Things haven't been going to well on the Plymouth ship for many people are sick.</p>
-        <p>Luckily your ship brought plenty of doctors to keep people healthy, 
-          and only one person has died, but not from disease, but from going insane and jumping off the ship.</p>
-        <p>Click the link below to continue your journey</p>
+        <script>
+          x = Math.floor((Math.random() * 3) + 1);
+          if (x == 1)
+          {
+            document.write("Your ship has successfully landed and is setting up camp!")
+          }
+          if (x == 2)
+          {
+            document.write("Your ship has had a minor crash and you loose 5% of your people")
+          }
+          if (x == 2)
+          {
+            document.write("Your ship has had a major crash while trying to land, causing you to lose 50% of people and 10% of supplies.")
+          }
+        </script>
+        <p>Click below to continue your journey</p>
         <a href="Scenario2P2.html">Continue</a>
       </section>
     </div>

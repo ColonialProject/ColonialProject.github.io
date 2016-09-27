@@ -27,14 +27,42 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="plymouth" class="anchor" href="#plymouth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plymouth Ship</h3>
+<a id="jamestown" class="anchor" href="#jamestown" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jamestown Ship!</h3>
 
-<p>Things haven't been going to well on the Plymouth ship for many people are sick.</p>
-        <p>Luckily your ship brought plenty of doctors to keep people healthy, 
-          and only one person has died, but not from disease, but from going insane and jumping off the ship.</p>
-        <p>Click the link below to continue your journey</p>
-        <a href="Scenario2P2.html">Continue</a>
+<p>You have chosen the Jamestown ship! Good choice!</p>
+        <p>You throw them off the ship in hope that they won't infect more people</p>
+        <p>You don't have any more issues with those symptoms and your ship seems fine for the time being.</p>
+        <p>You near Jamestown, and you are about to dock.</p>
+        <script>
+        var x = Math.floor((Math.random() * 3) + 1);
+        if (x == 1)
+        {
+          document.write("You have landed successfully with no deaths!");
+          var str = "Continue";
+          var result = str.link("Scenario1P2P3");
+          document.getElementById("Placement").innerHTML = result;
+        }
+        if (x == 2)
+        {
+          document.write("You landed with casualties. 25% of your ship dies.");
+          var str = "Continue";
+          var result = str.link("Scenario1P2P2");
+          document.getElementById("Placement").innerHTML = result;
+        }
+        if (x == 3)
+        {
+          document.write("You have landed with casualties. 50% of your ship dies.");
+          var str = "Continue";
+          var result = str.link("Scenario1P2P1");
+          document.getElementById("Placement").innerHTML = result;
+        }
+        </script>
+        
+      <p id="Placement"></p>
       </section>
     </div>
+
+    
+
   </body>
 </html>

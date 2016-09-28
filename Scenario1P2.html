@@ -34,6 +34,9 @@
         <p>You don't have any more issues with those symptoms and your ship seems fine for the time being.</p>
         <p>You near Jamestown, and you are about to dock.</p>
         <script>
+        window.onload = function()
+        {
+        //yourJSCodeHERE
         var x = Math.floor((Math.random() * 3) + 1);
         if (x == 1)
         {
@@ -55,6 +58,7 @@
           var str = "Continue";
           var result = str.link("Scenario1P2P1.html");
           document.getElementById("Placement").innerHTML = result;
+        }
         }
         </script>
         

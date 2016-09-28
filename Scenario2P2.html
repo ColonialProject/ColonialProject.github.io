@@ -28,13 +28,15 @@
       <section id="main_content" class="inner">
         <h3>
 <a id="plymouth" class="anchor" href="#plymouth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plymouth Ship</h3>
+        <p id="Placement">nul</p>
         <script>
           x = Math.floor((Math.random() * 3) + 1);
           if (x == 1)
           {
             document.write("Your ship has successfully landed and is setting up camp!");
             document.write(" Click the link below to continue your journey.");
-            document.getElementById("demo").innerHTML = "<a href="google.com">bill</a>";
+            var str = "Continue";
+            var result = str.link("Scenario1P2P3.html");
           }
           if (x == 2)
           {
@@ -46,7 +48,8 @@
           {
             document.write("Your ship has had a major crash while trying to land, causing you to lose 50% of people and 10% of supplies.");
             document.write("Click the link below to continue your journey.");
-            document.getElementById("demo").innerHTML = "<a href="google.com">bill</a>";
+            var str = "Continue";
+            var result = str.link("Scenario1P2P3.html");
           }
         </script>
       </section>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Colonial Project : Davis &amp; Ian&#39;s project for Social Studies">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Colonial Project</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title">Colonial Project</h1>
+          <h2 id="project_tagline">Davis &amp; Ian&#39;s project for Social Studies</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="jamestown" class="anchor" href="#jamestown" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Jamestown Ship!</h3>
+        <p id="Placement">nul</p>
+        <p>Your colony has met a complex problem.</p>
+        <p>Many people in your colony are suffering an unknown disease or sickness.</p>
+        <p>This sickness is causing terrible symptoms for it's victims, such as:</p>
+        <ul>
+        <li>Becoming less conscious</li>
+        <li>Thirst</li>
+        <li>Fatigue</li>
+        </ul>
+        <br>
+        <p>After a while, people begin to die from this in your colony.</p>
+        <script>
+        //yourJSCodeHERE
+        var x = Math.floor((Math.random() * 3) + 1);
+        if (x == 1)
+        {
+          document.write("You start having these weird symptoms. You eventually die from it.");
+          var str = "Retry";
+          var result = str.link("ScenarioChooser.html");
+          document.getElementById("Placement").innerHTML = result;
+        }
+        if (x == 2)
+        {
+          var str = "Continue";
+          var result = str.link("Scenario1P2P3P1P1.html");
+          document.getElementById("Placement").innerHTML = result;
+        }
+        if (x == 3)
+        {
+          var str = "Continue";
+          var result = str.link("Scenario1P2P3P1P1.html");
+          document.getElementById("Placement").innerHTML = result;
+        }
+        </script>
+        <br>
+        <br>
+        <i>Information we know about it now:</i>
+        <i>We know that the issue they were having was Hypernatremia (saltwater poisoning), which means that they weren't drinking enough water compared to salt, but the issue was that the water was extremely salty, and drinking the water just made it worst.</i>
+      </section>
+    </div>
+
+    
+
+  </body>
+</html>

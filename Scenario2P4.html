@@ -33,7 +33,7 @@
           x = Math.floor((Math.random() * 3) + 1);
           if (x == 1)
           {
-            window.location.replace("youwon.html");
+            window.location = "youwon.html";
           }
           if (x == 2)
           {
@@ -47,7 +47,7 @@
           if (x == 3)
           {
             document.write("Native Americans have attackd your camp and burned down most of what you have!");
-            document.write("The Native Americans have killed off most of your colony aswell, you being one of the people who got killed!");
+            document.write(" The Native Americans have killed off most of your colony aswell, you being one of the people who got killed!");
             var str = "Retry";
             var result = str.link("ScenarioChooser.html");
             document.getElementById("Placement").innerHTML = result;

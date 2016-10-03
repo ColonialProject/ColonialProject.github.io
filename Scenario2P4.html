@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Colonial Project : Davis &amp; Ian&#39;s project for Social Studies">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>Colonial Project</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title">Colonial Project</h1>
+          <h2 id="project_tagline">Davis &amp; Ian&#39;s project for Social Studies</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="plymouth" class="anchor" href="#plymouth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plymouth Ship</h3>
+        <p id="Placement">nul</p>
+        <script>
+          x = Math.floor((Math.random() * 3) + 1);
+          if (x == 1)
+          {
+            window.location.replace("youwon.html");
+          }
+          if (x == 2)
+          {
+            document.write("Your colony is trying as hard as they can to survive!");
+            document.write("Your colony is fighting to get enough food due to the sandy soil.");
+            document.write("Luckily, you have made an alliance with the Native Americans, and they show yiu how to farm!");
+            var str = "Continue";
+            var result = str.link("youwon.html");
+            document.getElementById("Placement").innerHTML = result;
+          }
+          if (x == 3)
+          {
+            document.write("Native Americans have attackd your camp and burned down most of what you have!");
+            document.write("The Native Americans have killed off most of your colony aswell, you being one of the people who got killed!");
+            var str = "Retry";
+            var result = str.link("ScenarioChooser.html");
+            document.getElementById("Placement").innerHTML = result;
+          }
+        </script>
+      </section>
+    </div>
+  </body>
+</html>
